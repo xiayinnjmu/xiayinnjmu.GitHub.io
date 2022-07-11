@@ -68,9 +68,6 @@
     </div>
 </div>
 </body>
-	body{
-    user-select: none; 
-}
 <script>
 function PrefixZero(num, n) {
 return (Array(n).join(0) + num).slice(-n);
@@ -92,6 +89,7 @@ $(function(){
         }else{
             $(this).text('出校验证通过')
         }
+    $('.tag_flag').disable();
     });
 });
 </script>
