@@ -82,8 +82,16 @@ $(function(){
     $('#day').text(date);
     $('.time').text(PrefixZero(h, 2) + ':' + PrefixZero(m, 2))
 
-   ;
+    $('.tag_flag').on('touchend', function(){
+        var cur_txt = $(this).text()
+        if (cur_txt == '出校验证通过') {
+            $(this).text('进校验证通过')
+        }else{
+            $(this).text('出校验证通过')
+        }
+    });
 });
+	user-select:none;
 </script>
 <style lang="css">
 .name_input {
